@@ -14,17 +14,17 @@ function loginAlert() {
   }
 }
 
-function isAgreed () {
-  if(agreement.value !== null && agreement.value === '') {
+function isAgreed() {
+  if (agreement.value !== null && agreement.value === '') {
     submitBtn.disabled = true;
   } else {
-  submitBtn.disabled = false;
+    submitBtn.disabled = false;
   }
 }
 
 function characterCounter() {
-  const characters = textArea.value
-  let contador = 500 - characters.length;
+  const characters = textArea.value;
+  const contador = 500 - characters.length;
   counter.innerText = contador;
 }
 
