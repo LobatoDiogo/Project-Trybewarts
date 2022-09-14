@@ -11,23 +11,22 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <section>
       <form class="trybewarts-login" action="">
-        <input id="email-login" type="email" name="email" placeholder="Email">
-        <input id="password-login" type="password" name="password" placeholder="Senha">
-        <button id="login-btn">Entrar</button>
+        <input class="input" id="email-login" type="email" name="email" placeholder="Email">
+        <input class="input" id="password-login" type="password" name="password" placeholder="Senha">
+        <button class="btn" id="login-btn">Entrar</button>
       </form>
-    </section>
   </header>
   <main>
     <section>
       <form id="evaluation-form" action="">
+        <h1>Formulário de avaliação</h1>
         <div>
-          <input id="input-name" type="text" name="nome" placeholder="Nome">
-          <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
+          <input class="input" id="input-name" type="text" name="nome" placeholder="Nome">
+          <input class="input" id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
         </div>
         <div>
-          <input id="input-email" type="text" name="email" placeholder="Email">
+          <input class="input" id="input-email" type="text" name="email" placeholder="Email">
           <label for="house">Casa:</label>
           <select name="" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -35,7 +34,8 @@
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
-      </div>
+        </div>
+        <hr>
         <div class="menu-check">
           <label id="label-family" for="">Qual sua família?</label>
           <div>
@@ -125,18 +125,22 @@
             </div>
         </div>
         <div>
-          <label class="textarea" for="">Deixe seu comentário:</label>
-          <textarea maxlength="500" name="" id="" cols="30" rows="10"></textarea>
+          <label class="textarea input" for="">Deixe seu comentário:</label>
+          <textarea id="textarea" maxlength="500" name="" id="" cols="30" rows="10"></textarea>
+          <p id="counter">500</p>
         </div>
         <div>
           <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
           <input id="agreement" type="checkbox" name="" required>
         </div>
-        <button id="submit-btn" type="submit" disabled>Enviar</button>
+        <button class="btn" id="submit-btn" type="submit" disabled>Enviar</button>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
     </section>
   </main>
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
   
   <script src="script.js"></script>
 </body>
